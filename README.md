@@ -17,11 +17,17 @@ I'll give you the link to Coffeescript. Beyond that point you're on your own. I 
 http://coffeescript.org
 
 ### Building MoveThing
-To turn the Coffeescript into usable javascript, you'll have to run the coffee compiler from the command line:
+To turn the Coffeescript into usable javascript, you'll have to invoke the Cakefile build script by running:
 
-    coffee -w -j lib/movething.js -c src
+    cake build
 
-In the near future there will be a Cakefile which will simply the build process (by simplify I mean "shorten the command line string you have to type").
+Alternatively, if you want to watch the src tree for changes and have builds happen automatically, you can run
+
+    cake watch
+
+Finally, if you hate cakefiles and just want to build from the command line you can run
+
+    coffee -j lib/movething.js -c src
 
 ### Starting MoveThing
 

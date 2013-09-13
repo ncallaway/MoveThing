@@ -12,5 +12,5 @@ class Loop
 
     step: =>
         #console.log "got a frame"
-        @callback() if typeof(@callback) is "function"
+        @callback?()
         @requestFrame()
